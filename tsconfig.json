@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "lib": [ "es6" ],
+    "sourceMap": true,
+    "allowJs":  true
+  },
+  "exclude": [
+    "node_modules",
+    "./plugins/**/*",
+    "./typings/**/*",
+    "./dist/**/*" // This is what fixed it!
+  ],
+  "include": [
+    "./**/*"
+  ]
+
+
+}
